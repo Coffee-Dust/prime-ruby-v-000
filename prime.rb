@@ -2,7 +2,7 @@
 def prime?(num)
   range = (1...num + 1)
   divisors = []
-  return false if num < 0
+  return false if num < 2
   range.each do |i|
     divisors << i if num % i == 0
   end
